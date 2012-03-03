@@ -17,6 +17,7 @@
 # The gps config appropriate for this device
 PRODUCT_COPY_FILES += \
     device/htc/speedy/prebuilt/system/etc/gps.conf:system/etc/gps.conf \
+    device/htc/speedy/prebuilt/system/lib/hw/gps.speedy.so:obj/lib/gps.speedy.so \
     device/htc/speedy/prebuilt/system/lib/hw/gps.speedy.so:system/lib/hw/gps.speedy.so
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
