@@ -2,7 +2,6 @@
 # system.prop for speedy
 #
 ro.camera.preview=true
-debug.fb.rgb565 = 0
 
 rild.libpath=/system/lib/libhtc_ril.so
 ro.telephony.default_network = 4
@@ -19,10 +18,6 @@ ro.ril.set.mtu1472 = 1
 net.tcp.buffersize.wimax = 4096,221184,524288,4096,16384,110208
 
 ro.com.google.locationfeatures = 1
-
-# density in DPI of the LCD of this board. This is used to scale the UI
-# appropriately. If this property is not defined, the default value is 160 dpi.
-ro.sf.lcd_density = 240
 
 # For auto backlight default value
 settings.display.autobacklight=1
