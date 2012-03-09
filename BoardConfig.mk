@@ -38,9 +38,6 @@ PRODUCT_COPY_FILES += \
     device/htc/speedy/prebuilt/system/lib/libmmipl.so:/system/lib/libmmipl.so \
     device/htc/speedy/prebuilt/system/lib/libmmjpeg.so:/system/lib/libmmjpeg.so
 
-# Workaround for speedy broken overlay scaling
-BOARD_OVERLAY_MINIFICATION_LIMIT := 2
-
 TARGET_BOOTLOADER_BOARD_NAME := speedy
 
 # GPS
@@ -54,7 +51,6 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 # TARGET_SPECIFIC_HEADER_PATH := device/htc/speedy/include
 TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x30-common/include
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 TARGET_PREBUILT_KERNEL := device/htc/speedy/kernel
