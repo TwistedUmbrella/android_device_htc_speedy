@@ -95,18 +95,7 @@ PRODUCT_COPY_FILES += \
     device/htc/speedy/prebuilt/vendor/firmware/default_mfg.acdb:system/etc/firmware/default_mfg.acdb \
     device/htc/speedy/prebuilt/vendor/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/speedy/prebuilt/vendor/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
-    device/htc/speedy/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_command_control.fw:system/etc/firmware/vidc_720p_command_control.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_h263_dec_mc.fw:system/etc/firmware/vidc_720p_h263_dec_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_h264_dec_mc.fw:system/etc/firmware/vidc_720p_h264_dec_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_h264_enc_mc.fw:system/etc/firmware/vidc_720p_h264_enc_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_mp2_dec_mc.fw:system/etc/firmware/vidc_720p_mp2_dec_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_mp4_dec_mc.fw:system/etc/firmware/vidc_720p_mp4_dec_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_mp4_enc_mc.fw:system/etc/firmware/vidc_720p_mp4_enc_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    device/htc/speedy/prebuilt/vendor/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw 
-
+    device/htc/speedy/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -119,20 +108,6 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# media config xml file
-PRODUCT_COPY_FILES += \
-    device/htc/speedy/prebuilt/system/etc/media_profiles.xml:system/etc/media_profiles.xml
-
-# OMX Config Profiles
-PRODUCT_COPY_FILES += \
-    device/htc/speedy/prebuilt/system/etc/vomeComp_RTSP.cfg:system/etc/vomeComp_RTSP.cfg \
-    device/htc/speedy/prebuilt/system/etc/vomeComp.cfg:system/etc/vomeComp.cfg \
-    device/htc/speedy/prebuilt/system/etc/vomeCore.cfg:system/etc/vomeCore.cfg \
-    device/htc/speedy/prebuilt/system/etc/vomeplay.cfg:system/etc/vomeplay.cfg \
-    device/htc/speedy/prebuilt/system/etc/vommcodec.cfg:system/etc/vommcodec.cfg \
-    device/htc/speedy/prebuilt/system/etc/voPDLog.cfg:system/etc/voPDLog.cfg \
-    device/htc/speedy/prebuilt/system/etc/voVidDec.dat:system/etc/voVidDec.dat
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -162,9 +137,6 @@ PRODUCT_COPY_FILES += $(shell \
     find device/htc/speedy/prebuilt/system/lib/modules -name '*.ko' \
     | sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
     | tr '\n' ' ')
-
-PRODUCT_COPY_FILES += \
-    device/htc/speedy/prebuilt/system/lib/libcryp98.so:system/lib/libcryp98.so
 
 $(call inherit-product-if-exists, vendor/htc/speedy/speedy-vendor.mk)
 

@@ -31,12 +31,6 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/htc/speedy/BoardConfigVendor.mk
 
-PRODUCT_COPY_FILES += \
-    device/htc/speedy/prebuilt/system/lib/libcamera.so:obj/lib/libcamera.so \
-    device/htc/speedy/prebuilt/system/lib/libcamera.so:/system/lib/libcamera.so \
-    device/htc/speedy/prebuilt/system/lib/liboemcamera.so:/system/lib/liboemcamera.so \
-    device/htc/speedy/prebuilt/system/lib/libmmipl.so:/system/lib/libmmipl.so \
-    device/htc/speedy/prebuilt/system/lib/libmmjpeg.so:/system/lib/libmmjpeg.so
 
 TARGET_BOOTLOADER_BOARD_NAME := speedy
 
