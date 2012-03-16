@@ -31,12 +31,15 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/htc/speedy/BoardConfigVendor.mk
 
-
 TARGET_BOOTLOADER_BOARD_NAME := speedy
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := speedy
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
+
+# Wifi Specific Defines
+WIFI_DRIVER_MODULE_ARG := "firmware_path=/vendor/firmware/fw_bcm4329.bin nvram_path=/proc/calibration iface_name=eth0"
+TARGET_CUSTOM_IFACE := eth0
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 435941376
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1394606080
