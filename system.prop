@@ -17,7 +17,7 @@ debug.sf.hw=1
 ro.sf.lcd_density=240
 
 # Connectivity
-wifi.interface = eth0
+wifi.interface = wlan0
 wifi.supplicant_scan_interval=120
 
 persist.sys.usb.config=mass_storage,adb
@@ -56,4 +56,4 @@ dalvik.vm.heapsize=32m
 # Make cdma voicemail the default voicemail number.
 ro.cdma.voicemail.number = mine
 
-mobiledata.interfaces=rmnet0,eth0,gprs,ppp0,wimax0
+mobiledata.interfaces=rmnet0,wlan0,gprs,ppp0,wimax0
