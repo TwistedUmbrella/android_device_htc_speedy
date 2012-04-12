@@ -45,7 +45,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x30-common/include
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-TARGET_PREBUILT_KERNEL := device/htc/speedy/prebuit/root/kernel
+TARGET_PREBUILT_KERNEL := device/htc/speedy/prebuilt/root/kernel
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_BASE := 0x4000000
