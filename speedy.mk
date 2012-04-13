@@ -68,6 +68,7 @@ PRODUCT_COPY_FILES += \
     device/htc/speedy/prebuilt/system/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
     device/htc/speedy/prebuilt/system/usr/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
     device/htc/speedy/prebuilt/system/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
+    device/htc/speedy/prebuilt/system/usr/keychars/speedy-keypad.kcm:system/usr/keychars/speedy-keypad.kcm \
     device/htc/speedy/prebuilt/system/usr/keychars/speedy-keypad.kcm.bin:system/usr/keychars/speedy-keypad.kcm.bin \
     device/htc/speedy/prebuilt/system/usr/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm \
     device/htc/speedy/prebuilt/system/usr/keychars/vision-keypad.kcm.bin:system/usr/keychars/vision-keypad.kcm.bin \

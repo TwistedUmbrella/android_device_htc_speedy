@@ -72,7 +72,7 @@ key 49    N
 key 50    M
 key 51    COMMA
 key 52    PERIOD
-key 53    SLASH
+key 214    SLASH
 key 54    SHIFT_RIGHT
 key 55    NUMPAD_MULTIPLY
 key 56    ALT_LEFT
@@ -105,7 +105,7 @@ key 82    NUMPAD_0
 key 83    NUMPAD_DOT
 # key 84 (undefined)
 # key 85 "KEY_ZENKAKUHANKAKU"
-key 86    BACKSLASH
+key 215    BACKSLASH
 key 87    F11
 key 88    F12
 # key 89 "KEY_RO"
@@ -234,7 +234,7 @@ key 208   MEDIA_FAST_FORWARD
 key 212   CAMERA
 # key 213 "KEY_SOUND"
 # key 214 "KEY_QUESTION"
-key 215   ENVELOPE
+#key 215   ENVELOPE
 # key 216 "KEY_CHAT"
 key 217   SEARCH
 # key 218 "KEY_CONNECT"

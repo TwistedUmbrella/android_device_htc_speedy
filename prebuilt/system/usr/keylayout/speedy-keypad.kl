@@ -1,7 +1,7 @@
 key 116   POWER             WAKE_DROPPED
 
 # column 0
-key 215   AT                WAKE_DROPPED
+key 215   BACKSLASH         WAKE_DROPPED
 key 42    SHIFT_LEFT        WAKE_DROPPED
 key 56    ALT_LEFT          WAKE_DROPPED
 key 105   DPAD_LEFT         WAKE_DROPPED
@@ -53,7 +53,7 @@ key 21    Y                 WAKE_DROPPED
 key 35    H                 WAKE_DROPPED
 key 49    N                 WAKE_DROPPED
 key 52    FUNC_3             WAKE_DROPPED
-key 214   QUECHAR           WAKE_DROPPED
+key 214   SLASH           WAKE_DROPPED
 key 106   DPAD_RIGHT        WAKE_DROPPED
 key 28    ENTER             WAKE_DROPPED
 
