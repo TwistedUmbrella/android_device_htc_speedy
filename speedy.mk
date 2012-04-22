@@ -118,22 +118,22 @@ PRODUCT_COPY_FILES += \
     device/htc/speedy/prebuilt/system/etc/vold.fstab:system/etc/vold.fstab \
     device/htc/speedy/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Kernel modules
-#PRODUCT_COPY_FILES += \
+TARGET_PREBUILT_KERNEL := device/htc/speedy/prebuilt/root/kernel
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/speedy/prebuilt/root/kernel
-else
+ifneq ($(TARGET_PREBUILT_KERNEL),)
+
+# Local Kernel
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Kernel Modules
 PRODUCT_COPY_FILES += $(shell \
     find device/htc/speedy/prebuilt/system/lib/modules -name '*.ko' \
     | sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
     | tr '\n' ' ')
+
+endif
 
 $(call inherit-product-if-exists, vendor/htc/speedy/speedy-vendor.mk)
 
